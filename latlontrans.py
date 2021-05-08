@@ -12,7 +12,7 @@ while True:
 		lonnum = latlon[4:6]#ARINC格式输出只取经度最后两位数
 		londir = latlon[6]#选取西/东经
 	except:
-		print("无法转换，请确认是否按格式输入且经纬度字母是否为大写")
+		print("无法转换，请确认是否按格式输入")
 		continue
 
 	if latdir == "N" and lonnum1<100 and londir == "W":
@@ -40,5 +40,5 @@ while True:
 		latnum=str(latnum)
 		print(latnum.rstrip()+latdir.rstrip()+lonnum.rstrip())
 	else:
-		print("无法转换，请确认是否按格式输入且经纬度字母是否为大写")
+		print("无法转换，请确认是否按格式输入")
 	continue
