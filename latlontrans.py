@@ -12,7 +12,7 @@ while True:
 			lonnum1 = int(lonnum1)#转换为整数
 			lonnum = latlon[4:6]#ARINC格式输出只取经度最后两位数
 			londir = latlon[6]#选取西/东经
-		except:
+		except Exception:
 			print("无法转换，请确认是否按格式输入")
 			continue
 
